@@ -11,9 +11,9 @@
 .welcome > h1 {
   font-family: "Changa One";
   font-weight: normal;
-  font-size: 144px;
+  font-size: 130px;
   left: 46px;
-  top: 155px;
+  top: 10%;
   position: absolute;
   color: white;
 }
@@ -26,7 +26,7 @@
   flex-direction: column;
   padding: 20px 50px;
   left: 150px;
-  top: 360px;
+  top: 40%;
   background: #d0fdff;
   border-radius:5px;
 }

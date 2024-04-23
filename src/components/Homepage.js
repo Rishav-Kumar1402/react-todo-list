@@ -16,8 +16,8 @@ export default function Homepage() {
   const [todos, setTodos] = useState([]);
   const [isEdit, setIsEdit] = useState(false);
   const [tempUidd, setTempUidd] = useState("");
-  const [searchQuery, setSearchQuery] = useState(""); // New state for search query
-  const navigate = useNavigate(); // Navigate used here
+  const [searchQuery, setSearchQuery] = useState(""); 
+  const navigate = useNavigate();
 
   useEffect(() => {
     const unregisterAuthObserver = auth.onAuthStateChanged((user) => {
@@ -32,13 +32,13 @@ export default function Homepage() {
           }
         });
       } else {
-        navigate("/"); // Using navigate here
+        navigate("/");
       }
     });
 
     // Cleanup function
     return () => unregisterAuthObserver();
-  }, [navigate]); // Added navigate to the dependency array
+  }, [navigate]); 
 
   const handleSignOut = () => {
     signOut(auth)
